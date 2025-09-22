@@ -1,0 +1,58 @@
+📊 Data Cleaning Report
+========================================
+
+Original Shape: (110527, 14)
+Cleaned Shape: (110526, 14)
+
+Missing Values (Before Cleaning):
+PatientId         0
+AppointmentID     0
+Gender            0
+ScheduledDay      0
+AppointmentDay    0
+Age               0
+Neighbourhood     0
+Scholarship       0
+Hipertension      0
+Diabetes          0
+Alcoholism        0
+Handcap           0
+SMS_received      0
+No-show           0
+dtype: int64
+
+Duplicates Removed: 0
+Invalid Ages Removed: 1
+
+Column Renamed:
+- Handcap → Handicap
+
+Standardized Columns:
+- Gender → Uppercase (M/F)
+- No-show → Uppercase (YES/NO)
+
+Datetime Columns Converted:
+- ScheduledDay
+- AppointmentDay
+
+Preview of Cleaned Dataset (first 5 rows):
+      PatientId  AppointmentID Gender              ScheduledDay  \
+0  2.987250e+13        5642903      F 2016-04-29 18:38:08+00:00   
+1  5.589978e+14        5642503      M 2016-04-29 16:08:27+00:00   
+2  4.262962e+12        5642549      F 2016-04-29 16:19:04+00:00   
+3  8.679512e+11        5642828      F 2016-04-29 17:29:31+00:00   
+4  8.841186e+12        5642494      F 2016-04-29 16:07:23+00:00   
+
+             AppointmentDay  Age      Neighbourhood  Scholarship  \
+0 2016-04-29 00:00:00+00:00   62    JARDIM DA PENHA            0   
+1 2016-04-29 00:00:00+00:00   56    JARDIM DA PENHA            0   
+2 2016-04-29 00:00:00+00:00   62      MATA DA PRAIA            0   
+3 2016-04-29 00:00:00+00:00    8  PONTAL DE CAMBURI            0   
+4 2016-04-29 00:00:00+00:00   56    JARDIM DA PENHA            0   
+
+   Hipertension  Diabetes  Alcoholism  Handicap  SMS_received No-show  
+0             1         0           0         0             0      NO  
+1             0         0           0         0             0      NO  
+2             0         0           0         0             0      NO  
+3             0         0           0         0             0      NO  
+4             1         1           0         0             0      NO  
