@@ -1,8 +1,9 @@
 # Task1-Data-Cleaning-and-Preprocessing
-# Medical Appointment No-Shows – Data Cleaning
+# Medical Appointment No. Shows – Data Cleaning
 
 ## 📌 Overview
-This project focuses on cleaning the **Medical Appointment No-Shows** dataset using **Python (pandas)**.  
+This project focuses on cleaning the **Medical Appointment No. Shows** dataset using **Python (pandas)** as a tool 
+and **Jupyter Notebook** as a resource.  
 The dataset originally contained duplicates, inconsistent formats, and invalid values.  
 I applied several cleaning steps to prepare it for further analysis.
 
